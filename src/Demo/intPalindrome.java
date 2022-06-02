@@ -19,11 +19,8 @@ public class intPalindrome {
 
     }
 
-    /*
-     * Java method to check if a number is palindrome or not
-     */
     public static boolean isPalindrome(int number) {
-        int palindrome = number; // copied number into variable
+        int palindrome = number;
         int reverse = 0;
 
         while (palindrome != 0) {
@@ -31,9 +28,6 @@ public class intPalindrome {
             reverse = reverse * 10 + remainder;
             palindrome = palindrome / 10;
         }
-
-        // if original and the reverse of number is equal means
-        // number is palindrome in Java
         if (number == reverse) {
             return true;
         }
